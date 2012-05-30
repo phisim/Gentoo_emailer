@@ -4,10 +4,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=1.0, maximum-scale=1.0">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta http-equiv="Page-Enter" content="blendTrans(Duration=1.0)">
+
     <title>Key Map</title>
     
-      </style>
     <link rel="apple-touch-startup-image" sizes="640x960" href="/images/startup_x2.png"/>
    <link rel="stylesheet" media="all" href="iphone_p.css">
    <link rel="apple-touch-icon-precomposed" href="/images/icon.png" />
@@ -24,26 +23,8 @@
    $('head').prepend('<meta name="viewport" content="user-scalable=1" />');
  }</script>
  <!-- script to disable zooming on input field **END**-->
- 
- <!--script to keep in web app below-->
- <!--<script src="" type="text/javascript">
- var a=document.getElementsByTagName("a");
- for(var i=0;i<a.length;i++) {
-     if(!a[i].onclick && a[i].getAttribute("target") != "_blank") {
-         a[i].onclick=function() {
-                 window.location=this.getAttribute("href");
-                 return false; 
-         }
-     }
- }
- </script>-->
- <!--script to keep in web app above-->
-<!-- script for css intro-->
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>thanks &middot; Made with Sencha Animator</title>
+
+
 <script type="text/javascript">
 if (typeof(AN) === 'undefined') {
    AN = {}; 
@@ -800,7 +781,7 @@ li.run {
 
 <body> 
 
-<script language="php">
+<?PHP
 $email = $HTTP_POST_VARS[email];
 $mailto = "emma.brown@gentoogroup.com";
 $mailsubj = "Form submission";
@@ -809,14 +790,14 @@ reset ($HTTP_POST_VARS);
 $mailbody = "Values submitted from web site form:\n";
 while (list ($key, $val) = each ($HTTP_POST_VARS)) { $mailbody .= "$key : $val\n"; }
 if (!eregi("\n",$HTTP_POST_VARS[email])) { mail($mailto, $mailsubj, $mailbody, $mailhead); }
-</script>
+?>
 
 <div id="iphone">
 <div id="top"></div><div id="spacer"></div>
 
 <div id="holder">
 <div id="spacer_big">
-	<ol id="AN-sObj-parentOl"><li id="AN-sObj-scene-0"><div class="AN-sObj-stage" id="ext-gen19519"><div id="AN-sObj-1"><span>T</span></div><div id="AN-sObj-12"><span>U</span></div><div id="AN-sObj-13"><span>O</span></div><div id="AN-sObj-14"><span>Y</span></div><div id="AN-sObj-15"><span>K</span></div><div id="AN-sObj-16"><span>N</span></div><div id="AN-sObj-17"><span>A</span></div><div id="AN-sObj-18"><span>H</span></div><div id="AN-sObj-27"><span>Submit another idea?</span></div><div class="AN-Object" id="AN-sObj-29"><div id="AN-sObj-val-29"><img height="340" width="340" src="images/arrow1.png"></div></div></div></li>
+	<ol id="AN-sObj-parentOl"><li id="AN-sObj-scene-0"><div class="AN-sObj-stage" id="ext-gen19519"><div id="AN-sObj-1"><span>T</span></div><div id="AN-sObj-12"><span>U</span></div><div id="AN-sObj-13"><span>O</span></div><div id="AN-sObj-14"><span>Y</span></div><div id="AN-sObj-15"><span>K</span></div><div id="AN-sObj-16"><span>N</span></div><div id="AN-sObj-17"><span>A</span></div><div id="AN-sObj-18"><span>H</span></div><div id="AN-sObj-27"><span>Submit another idea?</span></div><div class="AN-Object" id="AN-sObj-29"><div id="AN-sObj-val-29"><img height="340" width="340" src="images/arrow1.png" alt="arrow"></div></div></div></li>
 	
 	</ol>
 </div>
@@ -834,7 +815,7 @@ if (!eregi("\n",$HTTP_POST_VARS[email])) { mail($mailto, $mailsubj, $mailbody, $
 					<input type="text" name="job" value="" style='width: 290px'/>
 				<p>What's your contact number?</p>
 					<input type="tel" name="phone" value="" style='width: 290px'/>
-				<p><center><input type="submit" ></center></p>
+				<p><input type="submit" ></p>
 		</form>
 		<script type="text/javascript">
 		 var frmvalidator  = new Validator("idea");

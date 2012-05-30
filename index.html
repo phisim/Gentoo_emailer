@@ -4,10 +4,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=1.0, maximum-scale=1.0">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta http-equiv="Page-Enter" content="blendTrans(Duration=1.0)">
+
     <title>Gentoo Ideas</title>
     
-      </style>
     <link rel="apple-touch-startup-image" sizes="320x460" href="/images/splash.png"/>
    <link rel="stylesheet" media="all" href="iphone_p.css">
    <link rel="apple-touch-icon-precomposed" href="/images/icon1.png"  />
@@ -24,19 +23,6 @@
  }</script>
  <!-- script to disable zooming on input field **END**-->
  
- <!--script to keep in web app below-->
- <!--<script src="" type="text/javascript">
- var a=document.getElementsByTagName("a");
- for(var i=0;i<a.length;i++) {
-     if(!a[i].onclick && a[i].getAttribute("target") != "_blank") {
-         a[i].onclick=function() {
-                 window.location=this.getAttribute("href");
-                 return false; 
-         }
-     }
- }
- </script>-->
- <!--script to keep in web app above-->
 <!-- script for css intro-->
 <script type="text/javascript">
 if (typeof(AN) === 'undefined') {
@@ -284,7 +270,7 @@ controller.replayScene();
 
 <div id="holder">
 <div id="spacer_big">
-	<ol id="AN-sObj-parentOl"><li id="AN-sObj-scene-0"><div class="AN-sObj-stage" id="ext-gen29069"><div class="AN-Object" id="AN-sObj-3"><div id="AN-sObj-val-3"><img height="1191" width="842" src="images/animation.png"></div></div><div id="AN-sObj-8"><span>SUBMIT YOURS BELOW</span></div><div class="AN-Object" id="AN-sObj-12"><div id="AN-sObj-val-12"><img height="340" width="340" src="images/arrow1.png"></div></div><div class="AN-Object" id="AN-sObj-15"><div id="AN-sObj-val-15"><img height="340" width="340" src="images/restart.png"></div></div></div></li>
+	<ol id="AN-sObj-parentOl"><li id="AN-sObj-scene-0"><div class="AN-sObj-stage" id="ext-gen29069"><div class="AN-Object" id="AN-sObj-3"><div id="AN-sObj-val-3"><img height="1191" width="842" src="images/animation.png" alt="animation"></div></div><div id="AN-sObj-8"><span>SUBMIT YOURS BELOW</span></div><div class="AN-Object" id="AN-sObj-12"><div id="AN-sObj-val-12"><img height="340" width="340" src="images/arrow1.png" alt="down arrow"></div></div><div class="AN-Object" id="AN-sObj-15"><div id="AN-sObj-val-15"><img height="340" width="340" src="images/restart.png" alt="restart animation"></div></div></div></li>
 	
 	</ol>
 </div>
@@ -302,8 +288,9 @@ controller.replayScene();
 					<input type="text" name="job" value="" style='width: 290px'/>
 				<p>What's your contact number?</p>
 					<input type="tel" name="phone" value="" style='width: 290px'/>
-				<p><center><input type="submit" ></center></p>
+				<p><input type="submit" ></p>
 		</form>
+		
 		<script type="text/javascript">
 		 var frmvalidator  = new Validator("idea");
 		                     frmvalidator.addValidation("suggestion","req","Please enter your idea");

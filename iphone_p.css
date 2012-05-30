@@ -59,7 +59,6 @@ intro{
 			border-radius: 3px;
 			font: 18px  Arial, Verdana, Times, serif;
 			outline: none;
-			float: clear;
 			/*width: 290px;
 			min-width: 290px;*/
 			height: 30px;
@@ -414,7 +413,7 @@ li.run {
 
     100% {
     }
-}
+
 
 
 
@@ -422,7 +421,7 @@ li.run {
         -moz-transform: translate(73px, 43px);
         -moz-animation-timing-function: ease;
     }
-}
+
 
 
 
@@ -430,7 +429,7 @@ li.run {
         -moz-transform: translate(127px, 43px);
         -moz-animation-timing-function: ease;
     }
-}
+
 
 
 
@@ -438,7 +437,7 @@ li.run {
         -moz-transform: translate(181px, 43px);
         -moz-animation-timing-function: ease;
     }
-}
+
 
 
 
@@ -446,7 +445,7 @@ li.run {
         -moz-transform: translate(228px, 43px);
         -moz-animation-timing-function: ease;
     }
-}
+
 
 
 
@@ -454,7 +453,7 @@ li.run {
         -moz-transform: translate(80px, 124px);
         -moz-animation-timing-function: ease;
     }
-}
+
 
 
 
@@ -462,7 +461,7 @@ li.run {
         -moz-transform: translate(124px, 124px);
         -moz-animation-timing-function: ease;
     }
-}
+
 
 
 
@@ -470,7 +469,7 @@ li.run {
         -moz-transform: translate(178px, 124px);
         -moz-animation-timing-function: ease;
     }
-}
+
 
 
 
@@ -478,7 +477,7 @@ li.run {
         -moz-transform: translate(29px, 43px);
         -moz-animation-timing-function: ease;
     }
-}
+
 
 
 
@@ -490,5 +489,5 @@ li.run {
         -moz-transform: translate(67px, 218px);
         opacity: 1;
     }
-}
+
 
